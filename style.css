@@ -7,17 +7,22 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fffcfc; /* Grey background color */
-  margin: 0; 
+  background-image: url('images/background.jpg'); /* Set background image for the entire page */
+  background-size: cover; /* Make the background cover the entire page */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  margin: 0;
 }
 
-/* Style the navigation bar */
+.header {
+  background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background to the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for the header */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #fffcfc;
+  padding: 15px 20px;
 }
 
 .navbar .logo img {
@@ -36,12 +41,27 @@ body {
 .navbar .links ul li a {
   text-decoration: none;
   color: #333;
-  font-size: 26px;
+  font-size: 18px;
   transition: color 0.2s;
 }
 
 .navbar .links ul li a:hover {
   color: #ff0000;
+}
+
+/* Set the text color to white for all sections */
+.content h2,
+.content p {
+  color: #fff;
+}
+.content {
+  margin: 20px; /* Add margin for spacing */
+  padding: 20px; /* Add padding for spacing */
+}
+/* Set the text color to white for services and footer */
+.services ul li,
+.footer p {
+  color: #fff;
 }
 
 /* Style the hero section */
@@ -54,33 +74,30 @@ body {
 }
 
 .hero-content {
-  background-color: transparent; /* Set background to transparent */
+  background: none; /* Remove background color */
   padding: 20px;
   border-radius: 10px;
 }
 
 .hero h1 {
   font-size: 56px;
+  text-transform: uppercase; /* Convert text to uppercase */
+  margin-bottom: 20px; /* Add margin to create space */
 }
 
 .hero p {
   font-size: 20px;
   margin-top: 20px;
+  font-weight: bold; /* Add font weight for emphasis */
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 18px;
   border: none;
   border-radius: 5px;
-  background-color: #E8505B;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.2s ease;
-  margin-top: 20px;
-}
-
-.btn:hover {
-  background: #bb444c;
+  background-color: #556ff1; /* Change button color to blue */
+  color: #fff; /* Make text white */
+  margin-top: 30px; /* Increase margin to create more space */
 }
