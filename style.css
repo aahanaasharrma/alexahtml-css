@@ -1,0 +1,86 @@
+/* Apply some basic styles to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1919; /* Grey background color */
+  margin: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+}
+
+.navbar .logo img {
+  max-width: 100px;
+}
+
+.navbar .links ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .links ul li {
+  margin-left: 20px;
+}
+
+.navbar .links ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 26px;
+  transition: color 0.2s;
+}
+
+.navbar .links ul li a:hover {
+  color: #ff0000;
+}
+
+/* Style the hero section */
+.hero {
+  background-image: url('hero-background.jpg');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.hero-content {
+  background-color: transparent; /* Set background to transparent */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 56px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #E8505B;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #bb444c;
+}
